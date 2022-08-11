@@ -1,4 +1,5 @@
 import * as path from 'path';
+import NpmDtsPlugin from 'npm-dts-webpack-plugin';
 const config = {
     entry: './src/index.ts',
     output: {
@@ -10,6 +11,11 @@ const config = {
         umdNamedDefine: true
     },
     devtool: 'inline-source-map',
+    plugins: [
+        new NpmDtsPlugin({
+            output: 'ws_roomified_client.d.ts',
+        })
+    ],
     module: {
         rules: [
             {
