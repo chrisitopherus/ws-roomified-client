@@ -1,10 +1,10 @@
 {
   "name": "ws-roomified-client",
-  "version": "0.5.24",
+  "version": "0.5.25",
   "description": "Client implementation of the ws-roomified module",
-  "main": "dist/bundle.js",
+  "main": "lib/ws_roomified_client.js",
   "type": "module",
-  "types": "lib/index.d.ts",
+  "types": "lib/ws_roomified_client.d.ts",
   "scripts": {
     "build": "webpack --mode=production --no-devtool",
     "dev": "webpack --mode=development --watch",

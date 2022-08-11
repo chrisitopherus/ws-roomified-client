@@ -60,7 +60,7 @@ Storage for the listeners.
 
 #### Defined in
 
-[emitter.ts:13](https://github.com/chrisitopherus/ws-roomified-client/blob/468c1fa/src/emitter.ts#L13)
+[emitter.ts:13](https://github.com/chrisitopherus/ws-roomified-client/blob/2f8f6b2/src/emitter.ts#L13)
 
 ## Methods
 
