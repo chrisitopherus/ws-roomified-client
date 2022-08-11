@@ -1,3 +1,5 @@
+ws-roomified-client / [Exports](modules.md)
+
 # ws-roomified-client
 
 [![Version npm](https://img.shields.io/badge/version-0.5.2-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)

@@ -1,0 +1,36 @@
+{
+  "name": "ws-roomified-client",
+  "version": "0.5.2",
+  "description": "Client implementation to a ws-roomified module",
+  "main": "dist/bundle.js",
+  "type": "module",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "webpack --mode=production --no-devtool",
+    "dev": "webpack --mode=development --watch",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisitopherus/ws-roomified-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/chrisitopherus/ws-roomified-client/issues"
+  },
+  "homepage": "https://github.com/chrisitopherus/ws-roomified-client#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "source-map-loader": "^4.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
