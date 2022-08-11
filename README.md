@@ -1,10 +1,10 @@
 # ws-roomified-client
 
-[![Version npm](https://img.shields.io/badge/version-0.5.2-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)
+[![Version npm](https://img.shields.io/badge/version-0.5.21-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)
 
 **Note: This package is not for production usage in the current state since it is not really finished. Please consider using a different package since I made this package for my own usage.**
 
-> Client implementation of the ws-roomified module optimized for working with typescript by providing built-in types.
+> Client implementation of the [ws-roomified](https://www.npmjs.com/package/ws-roomified) module optimized for working with typescript by providing built-in types.
 
 ## [Homepage](https://chrisitopherus.github.io/ws-roomified-client)
 
@@ -146,6 +146,8 @@ The Client is meant to be a wrapper for the socket connection.
 - `EventsWithinClient` (For events sent within the client)
 
 ```ts
+// import type alias to provide type-safe parameter
+import { SocketURL } from 'ws-roomified-client';
 // for TS users, pass the type aliases containing the events as generics
 class Client extends AbstractClient<FromClient, FromServer, EventsWithinClient> {
 

@@ -2,6 +2,7 @@ src
 .gitignore
 tsconfig.json
 webpack.config.js
+.babelrc
 node_modules
 package-lock.json
 test
