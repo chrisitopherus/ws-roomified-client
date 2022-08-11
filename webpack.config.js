@@ -2,8 +2,12 @@ import * as path from 'path';
 const config = {
     entry: './src/index.ts',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve('./lib')
+        filename: 'ws_roomified_client.js',
+        path: path.resolve('./lib'),
+        library: 'ws-roomified-client',
+        libraryTarget: 'umd',
+        globalObject: 'this',
+        umdNamedDefine: true
     },
     devtool: 'inline-source-map',
     module: {
