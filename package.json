@@ -1,7 +1,7 @@
 {
   "name": "ws-roomified-client",
-  "version": "0.5.21",
-  "description": "Client implementation to a ws-roomified module",
+  "version": "0.5.22",
+  "description": "Client implementation of the ws-roomified module",
   "main": "dist/bundle.js",
   "type": "module",
   "types": "lib/index.d.ts",
@@ -14,13 +14,18 @@
     "type": "git",
     "url": "git+https://github.com/chrisitopherus/ws-roomified-client.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "",
+  "keywords": [
+    "ws",
+    "client",
+    "wrapper",
+    "ts"
+  ],
+  "author": "chrisitopherus",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/chrisitopherus/ws-roomified-client/issues"
   },
-  "homepage": "https://github.com/chrisitopherus/ws-roomified-client#readme",
+  "homepage": "https://chrisitopherus.github.io/ws-roomified-client",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
