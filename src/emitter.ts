@@ -65,6 +65,11 @@ export abstract class AbstractClientEventEmitter<SocketsEventsFromServer extends
      * @public
      */
     public emit<T extends EventsWithinClient | SocketsEventsFromServer>(event: T["event"], data: DataByEvent<T["event"], T>["data"]) {
+        // first check if there is not already an storage for the event
+        if (!this.listeners[event]) {
+            // then create a storage for it
+            this.listeners[event] = [];
+        }
         this.listeners[event].forEach(listener => {
             // call the listeners with the data
             listener(data);
