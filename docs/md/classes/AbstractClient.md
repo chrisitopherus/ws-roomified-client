@@ -69,7 +69,7 @@ The socket connection.
 
 #### Defined in
 
-[client.ts:15](https://github.com/chrisitopherus/ws-roomified-client/blob/9badd6d/src/client.ts#L15)
+[client.ts:15](https://github.com/chrisitopherus/ws-roomified-client/blob/468c1fa/src/client.ts#L15)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[client.ts:31](https://github.com/chrisitopherus/ws-roomified-client/blob/9badd6d/src/client.ts#L31)
+[client.ts:31](https://github.com/chrisitopherus/ws-roomified-client/blob/468c1fa/src/client.ts#L31)
 
 ## Accessors
 
