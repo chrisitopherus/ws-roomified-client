@@ -1,4 +1,4 @@
-import { ClientEvents, SocketEvents, ClientEventsHelper, DataByEvent } from "./types/socket";
+import { ClientEvents, SocketEvents, ClientEventsHelper, DataByEvent } from "./types/socket.js";
 
 /**
  * Abstract class for an EventEmitter that implements all necessary methods and properties.

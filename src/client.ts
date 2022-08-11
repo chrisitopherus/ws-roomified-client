@@ -1,5 +1,5 @@
-import { AbstractClientEventEmitter } from "./emitter";
-import { ClientEvents, SocketEvents, ClientEventsHelper, DataByEvent, SocketURL } from "./types/socket";
+import { AbstractClientEventEmitter } from "./emitter.js";
+import { ClientEvents, SocketEvents, ClientEventsHelper, DataByEvent, SocketURL } from "./types/socket.js";
 
 /**
  * Abstract class for a Client that implements all necessary methods and properties.
@@ -23,14 +23,23 @@ export abstract class AbstractClient<EventsFromClient extends SocketEvents = any
     };
 
     /**
+     * EventEmitter instance used for handling the incoming socket events and events within the client.
+     * @public
+     */
+    public emitter: AbstractClientEventEmitter<EventsFromServer, EventsWithinClient>;
+
+    /**
      * Constructor of the abstract Client class.
      * @param url URL for the socket connection.
      * @param emitter EventEmitter instance used for handling the incoming socket events and events within the client.
      * @public
      */
-    public constructor(url: SocketURL, public emitter: AbstractClientEventEmitter<EventsFromServer, EventsWithinClient>) {
+    public constructor(url: SocketURL, emitter: AbstractClientEventEmitter<EventsFromServer, EventsWithinClient>) {
         // saving the socket connection.
         this._socket = new WebSocket(url);
+
+        // saving emitter
+        this.emitter = emitter;
 
         // handling incoming socket messages
         this.socket.addEventListener("message", this.receiveMessage);
