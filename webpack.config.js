@@ -1,7 +1,7 @@
 import * as path from 'path';
-import NpmDtsPlugin from 'npm-dts-webpack-plugin';
 const config = {
-    entry: './src/index.ts',
+    entry: './src/ws_roomified_client.ts',
+    target: 'web',
     output: {
         filename: 'ws_roomified_client.js',
         path: path.resolve('./lib'),
@@ -10,12 +10,7 @@ const config = {
         globalObject: 'this',
         umdNamedDefine: true
     },
-    devtool: 'inline-source-map',
-    plugins: [
-        new NpmDtsPlugin({
-            output: 'ws_roomified_client.d.ts',
-        })
-    ],
+    devtool: 'source-map',
     module: {
         rules: [
             {
