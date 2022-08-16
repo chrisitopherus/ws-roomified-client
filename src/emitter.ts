@@ -25,7 +25,7 @@ export abstract class AbstractClientEventEmitter<SocketsEventsFromServer extends
      * @param handler The Listener that should be called when the event occurs.
      * @public
      */
-    public on<T extends EventsWithinClient["event"] | SocketsEventsFromServer["event"]>(event: T, handler: (data: DataByEvent<T, EventsWithinClient | SocketsEventsFromServer>["data"]) => any) {
+    public on<T extends EventsWithinClient["event"] | SocketsEventsFromServer["event"]>(event: T, handler: (data: DataByEvent<T, EventsWithinClient | SocketsEventsFromServer>) => any) {
         // first check if there is not already an storage for the event
         if (!this.listeners[event]) {
             // then create a storage for it
@@ -41,7 +41,7 @@ export abstract class AbstractClientEventEmitter<SocketsEventsFromServer extends
      * @param handler The Listener that should be removed from a specified event.
      * @public
      */
-    public off<T extends EventsWithinClient["event"] | SocketsEventsFromServer["event"]>(event: T, handler: (data: DataByEvent<T, EventsWithinClient | SocketsEventsFromServer>["data"]) => any) {
+    public off<T extends EventsWithinClient["event"] | SocketsEventsFromServer["event"]>(event: T, handler: (data: DataByEvent<T, EventsWithinClient | SocketsEventsFromServer>) => any) {
         for (let i = 0; this.listeners[event].length; ++i) {
             const listener = this.listeners[event][i];
             if (listener === handler) {
@@ -64,7 +64,7 @@ export abstract class AbstractClientEventEmitter<SocketsEventsFromServer extends
      * @param data The data to be emitted.
      * @public
      */
-    public emit<T extends EventsWithinClient | SocketsEventsFromServer>(event: T["event"], data: DataByEvent<T["event"], T>["data"]) {
+    public emit<T extends EventsWithinClient | SocketsEventsFromServer>(event: T["event"], data: DataByEvent<T["event"], T>) {
         // first check if there is not already an storage for the event
         if (!this.listeners[event]) {
             // then create a storage for it

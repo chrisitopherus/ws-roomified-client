@@ -1,6 +1,6 @@
 # ws-roomified-client
 
-[![Version npm](https://img.shields.io/badge/version-0.5.293-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)
+[![Version npm](https://img.shields.io/badge/version-0.5.294-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)
 
 **Note: This package is not for production usage in the current state since it is not really finished. Please consider using a different package since I made this package for my own usage.**
 
@@ -125,7 +125,7 @@ The ClientEventEmitter is just another Event Emitter implementation.
 
 ```ts
 // for TS users, pass the type aliases containing the events as generics
-class ClientEventEmitter extends AbstractRoom<FromServer, WithinClient>{
+class ClientEventEmitter extends AbstractClientEventEmitter<FromServer, WithinClient>{
     constructor() {
         // no parameters needed since the abstract class also does not need any.
         super();

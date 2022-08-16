@@ -60,7 +60,7 @@ Storage for the listeners.
 
 #### Defined in
 
-[emitter.ts:13](https://github.com/chrisitopherus/ws-roomified-client/blob/3a566ae/src/emitter.ts#L13)
+[emitter.ts:13](https://github.com/chrisitopherus/ws-roomified-client/blob/f4e7302/src/emitter.ts#L13)
 
 ## Methods
 
@@ -81,7 +81,7 @@ Method for emitting events with data.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `event` | `T`[``"event"``] | The specified event. |
-| `data` | [`DataByEvent`](../modules.md#databyevent)<`T`[``"event"``], `T`\>[``"data"``] | The data to be emitted. |
+| `data` | [`DataByEvent`](../modules.md#databyevent)<`T`[``"event"``], `T`\> | The data to be emitted. |
 
 #### Returns
 
@@ -106,7 +106,7 @@ Method for unbinding listeners from certain events.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `event` | `T` | The event where a listener should be removed. |
-| `handler` | (`data`: [`DataByEvent`](../modules.md#databyevent)<`T`, `SocketsEventsFromServer`\> \| [`DataByEvent`](../modules.md#databyevent)<`T`, `EventsWithinClient`\>[``"data"``]) => `any` | The Listener that should be removed from a specified event. |
+| `handler` | (`data`: [`DataByEvent`](../modules.md#databyevent)<`T`, `SocketsEventsFromServer`\> \| [`DataByEvent`](../modules.md#databyevent)<`T`, `EventsWithinClient`\>) => `any` | The Listener that should be removed from a specified event. |
 
 #### Returns
 
@@ -131,7 +131,7 @@ Method for binding listeners to certain events.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `event` | `T` | The event that should be listened to. |
-| `handler` | (`data`: [`DataByEvent`](../modules.md#databyevent)<`T`, `SocketsEventsFromServer`\> \| [`DataByEvent`](../modules.md#databyevent)<`T`, `EventsWithinClient`\>[``"data"``]) => `any` | The Listener that should be called when the event occurs. |
+| `handler` | (`data`: [`DataByEvent`](../modules.md#databyevent)<`T`, `SocketsEventsFromServer`\> \| [`DataByEvent`](../modules.md#databyevent)<`T`, `EventsWithinClient`\>) => `any` | The Listener that should be called when the event occurs. |
 
 #### Returns
 

@@ -16,7 +16,7 @@ type SocketEvents = SocketEvent<`${any}`, any>
 /**
  * Utility type helper for finding the data for a specific event name.
  */
-type DataByEvent<E extends SocketEvents['event'], T extends SocketEvents> = T extends { event: E } ? T : never;
+type DataByEvent<E extends SocketEvents['event'], T extends { event: string, data: any }> = T extends { event: E, data: any } ? T["data"] : never;
 
 /**
  * Utility type helper for creating a mapped type for the socket events.
