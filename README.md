@@ -1,6 +1,6 @@
 # ws-roomified-client
 
-[![Version npm](https://img.shields.io/badge/version-0.5.294-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)
+[![Version npm](https://img.shields.io/badge/version-0.5.295-blue.svg?logo=npm)](https://www.npmjs.com/package/ws-roomified-client)
 
 **Note: This package is not for production usage in the current state since it is not really finished. Please consider using a different package since I made this package for my own usage.**
 

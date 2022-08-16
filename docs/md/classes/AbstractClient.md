@@ -69,7 +69,7 @@ The socket connection.
 
 #### Defined in
 
-[client.ts:15](https://github.com/chrisitopherus/ws-roomified-client/blob/f4e7302/src/client.ts#L15)
+[client.ts:15](https://github.com/chrisitopherus/ws-roomified-client/blob/5c119eb/src/client.ts#L15)
 
 ___
 
@@ -81,7 +81,7 @@ EventEmitter instance used for handling the incoming socket events and events wi
 
 #### Defined in
 
-[client.ts:29](https://github.com/chrisitopherus/ws-roomified-client/blob/f4e7302/src/client.ts#L29)
+[client.ts:29](https://github.com/chrisitopherus/ws-roomified-client/blob/5c119eb/src/client.ts#L29)
 
 ## Accessors
 
