@@ -48,7 +48,7 @@ Template for creating new Events.
 
 #### Defined in
 
-[types/socket.ts:31](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L31)
+[types/socket.ts:31](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L31)
 
 ___
 
@@ -62,7 +62,7 @@ Just a Template to define a structure.
 
 #### Defined in
 
-[types/socket.ts:41](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L41)
+[types/socket.ts:41](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L41)
 
 ___
 
@@ -80,7 +80,7 @@ Utility type helper for creating a mapped type for the socket events.
 
 #### Defined in
 
-[types/socket.ts:46](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L46)
+[types/socket.ts:46](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L46)
 
 ___
 
@@ -99,7 +99,7 @@ Utility type helper for finding the data for a specific event name.
 
 #### Defined in
 
-[types/socket.ts:19](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L19)
+[types/socket.ts:19](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L19)
 
 ___
 
@@ -125,7 +125,7 @@ Template for creating new Events.
 
 #### Defined in
 
-[types/socket.ts:4](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L4)
+[types/socket.ts:4](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L4)
 
 ___
 
@@ -139,7 +139,7 @@ Just a Template to define a structure.
 
 #### Defined in
 
-[types/socket.ts:14](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L14)
+[types/socket.ts:14](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L14)
 
 ___
 
@@ -157,7 +157,7 @@ Utility type helper for creating a mapped type for the socket events.
 
 #### Defined in
 
-[types/socket.ts:24](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L24)
+[types/socket.ts:24](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L24)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[types/socket.ts:50](https://github.com/chrisitopherus/ws-roomified-client/blob/f67875e/src/types/socket.ts#L50)
+[types/socket.ts:50](https://github.com/chrisitopherus/ws-roomified-client/blob/88970e3/src/types/socket.ts#L50)
 
 ## Functions
 

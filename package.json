@@ -1,6 +1,6 @@
 {
   "name": "ws-roomified-client",
-  "version": "0.5.3",
+  "version": "0.5.301",
   "description": "Client implementation of the ws-roomified module",
   "main": "./lib/index.js",
   "type": "module",
